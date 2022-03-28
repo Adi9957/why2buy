@@ -10,7 +10,7 @@
   },
 
   "scripts": {
-    "start": "node display.js",
+    "start": "node ./display.js",
     "test": "Error While Executing the code"
   }
 }
