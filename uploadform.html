@@ -11,7 +11,25 @@
 body {
   padding: 20px 15%;
   display: flex;
+  background:tomato;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
 }
+
+/* New Edit*/
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+/*-----------------------------------*/
 form header {
   margin: 0 0 20px 0; 
 
@@ -79,6 +97,36 @@ textarea:focus {
   outline: 0;
   border-color: #4697e4;
 }
+.btn {
+ cursor: pointer;
+ display: inline-block;
+ border: 0;
+ font-weight: bold;
+ padding: 10px 20px;
+ background:orangered;
+ color: #fff;
+ font-size: 15px;
+ margin-bottom: 10px;
+}
+
+.btn:hover {
+ opacity: 0.9;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 26%;
+  
+}
+.table{
+ 
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  margin-left: 15%;
+}
 
 @media (max-width: 600px) {
   form > div {
@@ -113,11 +161,13 @@ textarea:focus {
     </style>
 </head>
 <body>
-    <form action="/upload_data" method="post" >
+
+    <form  class="table" action="/upload_data" method="post" >
 
         <header style="text-align: center;">
-          <h2 >NewsLetter Inkoop</h2>
-          <div>Admin Uploading</div>
+          <h2 >NewsLetter Admin Upload</h2>
+          <strong> * For Editing and deleting title heading is the  main header to select content *</strong>
+
         </header>
         
         <div>
@@ -166,12 +216,19 @@ textarea:focus {
         
         
         
-        <div>
+        <div class="buttons">
               <div>
-                <input id="saveForm" name="saveForm" type="submit" value="Upload">
+                <input  class="btn"  id="saveForm" name="saveForm" type="submit" value="Upload">
           </div>
-          </div>
+
+
+         
+
+
+        
+        </div>
         
       </form>
+
 </body>
 </html>

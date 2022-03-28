@@ -372,6 +372,8 @@ ul {
       <li><a href="#" >Bank</a></li>
      
       <li><a href="#">Message</a></li>
+
+      <li><a href="admin">Admin</a></li>
     </ul>
 
      <ul class="right-menu">
@@ -394,22 +396,22 @@ ul {
   
     <div class="row">
     
-      <% if(data.length){ %>
+      <% if(datalst.length){ %>
     
 
-        <%  for(var i = 0; i < data.length; i++) {%>  
+        <%  for(var i = 0; i < datalst.length; i++) {%>  
          
             <div class="leftcolumn">
               <div class="card">
-                <h2><%=  data[i].theading %></h2>
-                <h5><%=  data[i].tdes %></h5>
+                <h2><%=  datalst[i].theading %></h2>
+                <h5><%=  datalst[i].tdes %></h5>
 
         
                 <div class="fakeimg" style="height:100px;display:flex;align-items: center;justify-content: center;font-size: 7px;"><h1 style="text-align: center;">  This Page Is Education Pupose. We Write About 10 Stocks Every Day.We are Under Construction.For More Information Please Message Us.</h1>
                </div>
                
-                <li><%= data[i].cdesrl %></li>
-                <li><%= data[i].cdesrm %></li>
+                <li><%= datalst[i].cdesrl %></li>
+                <li><%= datalst[i].cdesrm %></li>
      
               </div>
            
