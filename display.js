@@ -296,7 +296,7 @@ display.get('/admin',function(req,res){
    res.sendFile(__dirname + "/loginform.html")
 
 
-}).listen(4221)
+}).listen(process.env.PORT || 5000)
 
 
 console.log("server listening at port 8080");
